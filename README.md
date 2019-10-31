@@ -1,4 +1,4 @@
-## Making a Project Website
+## ABE 516X Project.
 
 ### Configuration variables
 
