@@ -1,21 +1,9 @@
-## ABE 516X Project.
+## ABE 516X Project by Ben Smtih
 
-### Configuration variables
+### Introduction
 
-This instruction is specific to the slate theme but should translate well to other themes.  You can change default variables in your website build by making changes in your `_config.yml` file:
+The purpose of this project is to develop a machine learning model for predicting the air flow through an air filter wall bank. This project is based on the use of air filters in animal agriculture building ventilation systems. These 
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
-You can take a look at the `_config.yml` file in this repository to see how to type in the title and description.
 
 ### Markdown
 
