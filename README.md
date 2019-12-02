@@ -45,7 +45,12 @@ The models were evaluated using R^2 values, and the RMSE of the model. The most 
 
 ### Modeling Results 
  Quick Review: The main goal of this project is to develop a model to predict the airflow through an Environmental Air Filter Testing Chamber. The ultimate goal is to build this model into a prediction model to tell a swine or poultry producer when their air filters are loaded and need replaced without actually testing the air filters themselves.
+ 
+ For both Models the R^2 value was approximately 0.98 with a RMSE of 16 cfm per filter. The reduction on inputs had a small increase on the error of the model. For training time the full model took almost twice as long to train as the second model. The interesting result is that the Fan RPM and wattage was not a major factor of importance and when the fan control percentage was removed the chamber temperature took its place as a factor of importance. This is reasonable as the control percentage is decided based on the chamber temperature.
 
+ <img src="Modelfeatureall.JPG" alt="hi" class="inline"/>
+ 
+  <img src="Modelfeatureselect.JPG" alt="hi" class="inline"/>
 
 ### Class Exercise
 
