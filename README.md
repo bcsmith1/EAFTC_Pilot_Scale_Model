@@ -25,7 +25,7 @@ The RPM of the fan was logged using a contactless laser tachometer and 2 Onset H
 
 See the picture below for the inital expected work flow for the project.
 
- <img src="Projectworkflow.jpg" alt="hi" class="inline"/>
+ <img src="Projectworkflow.JPG" alt="hi" class="inline"/>
 Photo by Ben Smith
 
 #### Data Wrangling Tasks
