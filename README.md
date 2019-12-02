@@ -31,18 +31,22 @@ Photo by Ben Smith
 #### Data Wrangling Tasks
 The largest data wrangling task was taking in the 4 different sources of data, cleaning and preparing each source independently and merging them into 1 complete data frame. The controller data involved reading in multiple csv files and concating them. Other tasks from the other sources included up sampling data and filling in missing data values.
 
-### Data Exploration
-
+# Code for Sections moving forward
 You can use a website to host notebooks.  First, you'll want to get the "raw" url from Github where your notebook is stored.  Then, navigate to https://nbviewer.jupyter.org and paste that URL.  The result will be a new generated URL that hosts your notebook.  This can be a [link](https://nbviewer.jupyter.org/github/isu-abe/516x/blob/master/module2/bootcamp/notebooks/nocode/Module%20IIB%20-%20Python%20Basics%20-%20no%20code.ipynb) in your website.
 
-## Modeling Methods
+### Data Exploration
 
+The first task for data visualization was fill in the missing day of relative humidity (RH) data. Pariwise plots were created showing the relationship between the weather station data and the 3 RH sensors on the chamber. Based on the visulaization and then a Pearson Correlation test indicated that the 3 RH sensors on the chamber followed the weather station reading well. The ambient RH sensor on the chamber appeared to have issues at low values and the pre and post filter bank sensors had identical readings, the correlation value between the two was one. Based on that the ambient and post filter bank sensors were ignored moving forward. A linear regression between the pre filter bank and weather station value was modeled and used to fill in the missing data from when no RH sensors were installed on the chamber.
+
+## Modeling Methods
+For this project a Random Forest Model was utilized. In previous class exercise a linear regression model was attempted, but resulted in a high error value. This model lacked inputs of wind speed and direction as well as RH and fan RPM. Two random forest models were trained and evaluated on the accuracy of predicting the airflow through the chamber. The first model included all parameters gathered in the data base including: fan control percentage, chamber temperature, filter static pressure, fan static pressure, fan wattage, pre filter bank RH, fan RPM, wind speed, and wind direction. The second model had fewer inputs, these inputs were selected based on the difficulty to collect these values in-situ and were fan control percentage and fan RPM.
+
+The models were evaluated using R^2 values, and the RMSE of the model. The most critical inputs were also compared for each model. Note the RMSE was modified to be on a per filter basis for the chamber by dividing the RMSE for the model by four. This made for easier comparison of the model results to commercial filter testing variance. For refernce a mobile air filter testing lab had a maximum uncertainty of 10 cfm at an airflow rate of 202 cfm [1](https://cigrjournal.org/index.php/Ejounral/article/view/5458)
 
 ### Modeling Results 
 
 What is the scientitifc goal?  What would you do if you had all the data?  What do you want to predict or estimate?  Why is this relevant to ABE researchers or the field?  Provide some background on the rationale and relevance.
 
-### Results and Discussion
 
 ### Class Exercise
 
@@ -53,4 +57,5 @@ Here is an example of a fantastic project website:
 https://stephenslab.github.io/ipynb-website/
 
 
-
+### References
+1.	Smith, B. C., Ramirez, B. C., Hoff, S. J., Harmon, J. D., Stinn, J. P. (2019) Design and validation of a mobile air filter testing laboratory for animal agriculture applications. Agricultural Engineering International: CIGR Journal, 21(3): 39-5.
