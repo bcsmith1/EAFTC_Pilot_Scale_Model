@@ -6,8 +6,10 @@ The purpose of this project is to develop a machine learning model for predictin
 
 Pre-filters installed <img src="pre-filterpicsmall.jpg" alt="hi" class="inline"/>
 Photo by Ben Smith
+
  V-bank type filter <img src="v-bankpicsmall.jpg" alt="hi" class="inline"/>
 Photo by Ben Smith
+
 <img src="loadedfilterssmall.jpg" alt="hi" class="inline"/>
 Photo by Ben Smith
 
@@ -22,7 +24,8 @@ The RPM of the fan was logged using a contactless laser tachometer and 2 Onset H
 ### Project Work Flow
 
 See the picture below for the inital expected work flow for the project.
- <img src="projectworkflow.jpg" alt="hi" class="inline"/>
+
+ <img src="Projectworkflow.jpg" alt="hi" class="inline"/>
 Photo by Ben Smith
 
 #### Data Wrangling Tasks
