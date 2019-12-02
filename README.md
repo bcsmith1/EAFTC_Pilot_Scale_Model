@@ -28,11 +28,15 @@ See the picture below for the inital expected work flow for the project.
  <img src="Projectworkflow.JPG" alt="hi" class="inline"/>
 Photo by Ben Smith
 
+# Code for Sections moving forward
+[Preprocessing Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/ABE516x%20Project%20Data%20Preprocessing.ipynb)
+[Processing Controller Data Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Controller%20data%20processing%20and%20cleaning.ipynb)
+[Final Merger, data visualization, and modeling Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Combining%20code%20data%20vis%20and%20modeling.ipynb)
+
+
 #### Data Wrangling Tasks
 The largest data wrangling task was taking in the 4 different sources of data, cleaning and preparing each source independently and merging them into 1 complete data frame. The controller data involved reading in multiple csv files and concating them. Other tasks from the other sources included up sampling data and filling in missing data values.
 
-# Code for Sections moving forward
-You can use a website to host notebooks.  First, you'll want to get the "raw" url from Github where your notebook is stored.  Then, navigate to https://nbviewer.jupyter.org and paste that URL.  The result will be a new generated URL that hosts your notebook.  This can be a [link](https://nbviewer.jupyter.org/github/isu-abe/516x/blob/master/module2/bootcamp/notebooks/nocode/Module%20IIB%20-%20Python%20Basics%20-%20no%20code.ipynb) in your website.
 
 ### Data Exploration
 
