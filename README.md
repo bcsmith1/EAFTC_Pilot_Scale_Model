@@ -49,9 +49,9 @@ The models were evaluated using R^2 values, and the RMSE of the model. The most 
 
 ### Class Exercise
 
-The in-class exercise I would do using my project data would be a data wrangling task. I did debate a random forest task, but because of the large size of the data frame to begin with, 300,000 lines, the time invovled with just training the model alone would not be practical.
+The class exercise I would do using my project data would be a data wrangling task. I did debate a random forest task, but because of the large size of the data frame to begin with, 300,000 lines, the time invovled with just training the model alone would not be practical.
 
-This in-class exercise would be a walk through guided task of the data wrangling tasks involved with reading in multiple csv files and combining them, then sorting them by date and time stamp, and lastly merging in an additional csv file and using a custom fill missing value function. This would expose students to the encoding parameter of the pd.read_csv function, concating data frames together, as well as sorting the data. The last part of the task I would suggest including would be merging in the RH data file and then creating a custom fillnan function. I would suggest that the linear regression be given so that the task stays managable in length. See a suggested version of the notebook here:
+This class exercise would be a portion of the tasks of the data wrangling in my project involved with reading in multiple csv files and combining them, then sorting them by date and time stamp, and lastly merging in an additional csv file and using a custom fill missing value function. This would expose students to the encoding parameter of the pd.read_csv function, concating data frames together, as well as sorting the data. The last part of the task I would suggest including would be merging in the RH data file and then creating a custom fillnan function. I would suggest that the linear regression be given so that the task stays managable in length. See a suggested version of the notebook here:
 
 
 ### References
