@@ -44,17 +44,14 @@ For this project a Random Forest Model was utilized. In previous class exercise 
 The models were evaluated using R^2 values, and the RMSE of the model. The most critical inputs were also compared for each model. Note the RMSE was modified to be on a per filter basis for the chamber by dividing the RMSE for the model by four. This made for easier comparison of the model results to commercial filter testing variance. For refernce a mobile air filter testing lab had a maximum uncertainty of 10 cfm at an airflow rate of 202 cfm [1](https://cigrjournal.org/index.php/Ejounral/article/view/5458)
 
 ### Modeling Results 
-
-What is the scientitifc goal?  What would you do if you had all the data?  What do you want to predict or estimate?  Why is this relevant to ABE researchers or the field?  Provide some background on the rationale and relevance.
+ Quick Review: The main goal of this project is to develop a model to predict the airflow through an Environmental Air Filter Testing Chamber. The ultimate goal is to build this model into a prediction model to tell a swine or poultry producer when their air filters are loaded and need replaced without actually testing the air filters themselves.
 
 
 ### Class Exercise
 
-In each project, I'd like to see a homework assignment that the class can do/evaluate to learn more about your data.  This should be a reproducible notebook that allows them to learn one or more aspects of your data workflow.  It is also an opportunity to share your research with your colleagues.
+The in-class exercise I would do using my project data would be a data wrangling task. I did debate a random forest task, but because of the large size of the data frame to begin with, 300,000 lines, the time invovled with just training the model alone would not be practical.
 
-Here is an example of a fantastic project website:
-
-https://stephenslab.github.io/ipynb-website/
+This in-class exercise would be a walk through guided task of the data wrangling tasks involved with reading in multiple csv files and combining them, then sorting them by date and time stamp, and lastly merging in an additional csv file and using a custom fill missing value function. This would expose students to the encoding parameter of the pd.read_csv function, concating data frames together, as well as sorting the data. The last part of the task I would suggest including would be merging in the RH data file and then creating a custom fillnan function. I would suggest that the linear regression be given so that the task stays managable in length. See a suggested version of the notebook here:
 
 
 ### References
