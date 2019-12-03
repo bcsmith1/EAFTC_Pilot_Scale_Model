@@ -55,12 +55,15 @@ The models were evaluated using R^2 values, and the RMSE of the model. The most 
  <img src="Modelfeatureall.JPG" alt="hi" class="inline"/>
  
   <img src="Modelfeatureselect.JPG" alt="hi" class="inline"/>
+  
+  Both models are fairly accurate at the by-filter RMSE. The reduction of input variables had minimal impact on the models accuracy. This is promising as it would be ideal to develop a model with as few sensor inputs as possible to simply the cyber-physical systems hardware needs. Moving forward I am interested in expanding the data base to include more cold weather data and spring/fall data to increase the data set size. 
 
 ### Class Exercise
 
 The class exercise I would do using my project data would be a data wrangling task. I did debate a random forest task, but because of the large size of the data frame to begin with, 300,000 lines, the time invovled with just training the model alone would not be practical.
 
-This class exercise would be a portion of the tasks of the data wrangling in my project involved with reading in multiple csv files and combining them, then sorting them by date and time stamp, and lastly merging in an additional csv file and using a custom fill missing value function. This would expose students to the encoding parameter of the pd.read_csv function, concating data frames together, as well as sorting the data. The last part of the task I would suggest including would be merging in the RH data file and then creating a custom fillnan function. I would suggest that the linear regression be given so that the task stays managable in length. See a suggested version of the notebook here:
+This class exercise would be a portion of the tasks of the data wrangling in my project involved with reading in multiple csv files and combining them, then sorting them by date and time stamp, and lastly merging in an additional csv file and using a custom fill missing value function. This would expose students to the encoding parameter of the pd.read_csv function, concating data frames together, as well as sorting the data. The last part of the task I would suggest including would be merging in the RH data file and then creating a custom fillnan function. I would suggest that the linear regression be given so that the task stays managable in length. See a suggested version of the notebook [here.](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Class%20Exercise/Smith_Class_Exercise_withcode.ipynb)
+This notebook has a few issues with the merger code as the timestamps on the controller data is one second off from the version I had in the main project. I copy pasted the code from the project, so after a couple of hours of playing with this I am lost on the issue. I altered the methodology to meet the needs of the class exercise.
 
 
 ### References
