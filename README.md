@@ -29,8 +29,12 @@ See the picture below for the inital expected work flow for the project.
 Photo by Ben Smith
 
 ### Code for Sections moving forward
+[Git Hub Repo](https://github.com/bcsmith1/516x-Project-Code) for project and class exercise.
+
 [Preprocessing Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/ABE516x%20Project%20Data%20Preprocessing.ipynb)
+
 [Processing Controller Data Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Controller%20data%20processing%20and%20cleaning.ipynb)
+
 [Final Merger, data visualization, and modeling Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Combining%20code%20data%20vis%20and%20modeling.ipynb)
 
 
@@ -40,7 +44,9 @@ The largest data wrangling task was taking in the 4 different sources of data, c
 
 ### Data Exploration
 
-The first task for data visualization was fill in the missing day of relative humidity (RH) data. Pariwise plots were created showing the relationship between the weather station data and the 3 RH sensors on the chamber. Based on the visulaization and then a Pearson Correlation test indicated that the 3 RH sensors on the chamber followed the weather station reading well. The ambient RH sensor on the chamber appeared to have issues at low values and the pre and post filter bank sensors had identical readings, the correlation value between the two was one. Based on that the ambient and post filter bank sensors were ignored moving forward. A linear regression between the pre filter bank and weather station value was modeled and used to fill in the missing data from when no RH sensors were installed on the chamber.
+The first task for data visualization was fill in the missing day of relative humidity (RH) data. Pariwise plots were created showing the relationship between the weather station data and the 3 RH sensors on the chamber. Based on the visulaization and then a Pearson Correlation test indicated that the 3 RH sensors on the chamber followed the weather station reading well. The ambient RH sensor on the chamber appeared to have issues at low values and the pre and post filter bank sensors had identical readings, the correlation value between the two was one. Based on that the ambient and post filter bank sensors were ignored moving forward. A linear regression between the pre filter bank and weather station value was modeled and used to fill in the missing data from when no RH sensors were installed on the chamber. The figure below is the Pairwise plot comparing the input variables to the fan cfm measurements.
+
+<img src="Data_vis.JPG" alt="hi" class="inline"/>
 
 ## Modeling Methods
 For this project a Random Forest Model was utilized. In previous class exercise a linear regression model was attempted, but resulted in a high error value. This model lacked inputs of wind speed and direction as well as RH and fan RPM. Two random forest models were trained and evaluated on the accuracy of predicting the airflow through the chamber. The first model included all parameters gathered in the data base including: fan control percentage, chamber temperature, filter static pressure, fan static pressure, fan wattage, pre filter bank RH, fan RPM, wind speed, and wind direction. The second model had fewer inputs, these inputs were selected based on the difficulty to collect these values in-situ and were fan control percentage and fan RPM.
