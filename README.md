@@ -28,7 +28,7 @@ See the picture below for the inital expected work flow for the project.
  <img src="Projectworkflow.JPG" alt="hi" class="inline"/>
 Photo by Ben Smith
 
-# Code for Sections moving forward
+### Code for Sections moving forward
 [Preprocessing Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/ABE516x%20Project%20Data%20Preprocessing.ipynb)
 [Processing Controller Data Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Controller%20data%20processing%20and%20cleaning.ipynb)
 [Final Merger, data visualization, and modeling Notebook](https://nbviewer.jupyter.org/github/bcsmith1/516x-Project-Code/blob/master/Combining%20code%20data%20vis%20and%20modeling.ipynb)
@@ -56,7 +56,7 @@ The models were evaluated using R^2 values, and the RMSE of the model. The most 
  
   <img src="Modelfeatureselect.JPG" alt="hi" class="inline"/>
   
-  Both models are fairly accurate at the by-filter RMSE. The reduction of input variables had minimal impact on the models accuracy. This is promising as it would be ideal to develop a model with as few sensor inputs as possible to simply the cyber-physical systems hardware needs. Moving forward I am interested in expanding the data base to include more cold weather data and spring/fall data to increase the data set size. 
+  Both models are fairly accurate at the by-filter RMSE. The reduction of input variables had minimal impact on the models accuracy. This is promising as it would be ideal to develop a model with as few sensor inputs as possible to simply the cyber-physical systems hardware needs. Moving forward I am interested in expanding the data base to include more cold weather data and spring/fall data to increase the data set size. Removing additional variables that will be difficult to monitor are also future possibilities for improving this model before the model is implemented into a prediction system basis on the chamber.
 
 ### Class Exercise
 
