@@ -2,7 +2,11 @@
 
 ### Introduction
 
-The purpose of this project is to develop a machine learning model for predicting the air flow through an air filter wall bank. This project is based on the use of air filters in animal agriculture building ventilation systems. Air filters are gaining popularity with commercial producers to reduce the spread of airborne diseases in high animal density regions like Iowa. These systems employ large numbers of pre-filters and v-bank filters (primary and secondary filters) making testing filters very expensive. The primary objective of this project is to model the airflow using the ventilation system parameters. The ultimate goal for this project is to develop a system to monitor and predict when the filters are loaded and need replaced in-situ to save producers money on filter testing. 
+The purpose of this project is to develop a machine learning model for predicting the air flow through an air filter wall bank. This project is based on the use of air filters in animal agriculture building ventilation systems. Air filters are gaining popularity with commercial producers to reduce the spread of airborne diseases in high animal density regions like Iowa. These systems employ large numbers of pre-filters and v-bank filters (primary and secondary filters) making testing filters very expensive. 
+
+<img src="Combofilterbank.jpg" alt="hi" class="inline"/>
+
+The primary objective of this project is to model the airflow using the ventilation system parameters. The ultimate goal for this project is to develop a system to monitor and predict when the filters are loaded and need replaced in-situ to save producers money on filter testing. 
 
 Pre-filters installed <img src="pre-filterpicsmall.jpg" alt="hi" class="inline"/>
 
